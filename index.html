@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>小松農園</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header-footer text-white py-3">
+        <div class="container-custom d-flex justify-content-between align-items-center">
+            <h1 class="h4 mb-0">小松農園</h1>
+            <nav>
+                <a href="index.html" class="text-white me-3">TOP</a>
+                <a href="#" class="text-white me-3">注文履歴</a>
+                <a href="admin-settings.html" class="text-white">管理者</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section class="text-center bg-light py-5">
+        <div class="main-visual-container">
+            <img src="templates/main_image1.jpg" alt="農園のイメージ画像" class="img-fluid main-visual">
+            <div class="overlay-text">
+                <h2 class="mt-2">有機栽培の安心を、職場にお届け</h2>
+                <p class="fs-4">毎週火曜日配達（○曜日締め切り）</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- お知らせ -->
+    <section class="container-custom py-4">
+        <h3>農園からのお知らせ</h3>
+        <div class="border p-3 bg-light">お知らせ内容</div>
+    </section>
+
+    <!-- 注文受付 -->
+    <section class="container-custom py-4">
+        <h3>注文受付中</h3>
+        <p>配達日：X月X日（曜日）</p>
+        <p>注文締切日：X月X日（曜日）</p>
+        
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3">
+            <!-- 商品リスト -->
+            <div class="col">
+                <div class="border p-3">
+                    <img src="templates/product1.jpg" alt="商品1" class="img-fluid">
+                    <p class="mt-2 text-start">キャベツ</p>
+                    <p class="text-start">￥XXX</p>
+                    <p class="text-start">在庫状況</p>
+                    <select class="form-select">
+                        <option>数量: 0</option>
+                        <option>数量: 1</option>
+                        <option>数量: 2</option>
+                        <option>数量: 4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="border p-3">
+                    <img src="templates/product2.jpg" alt="商品2" class="img-fluid">
+                    <p class="mt-2 text-start">人参</p>
+                    <p class="text-start">￥XXX</p>
+                    <p class="text-start">在庫状況</p>
+                    <select class="form-select">
+                        <option>数量: 0</option>
+                        <option>数量: 1</option>
+                        <option>数量: 2</option>
+                        <option>数量: 4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="border p-3">
+                    <img src="templates/product3.jpg" alt="商品3" class="img-fluid">
+                    <p class="mt-2 text-start">里芋</p>
+                    <p class="text-start">￥XXX</p>
+                    <p class="text-start">在庫状況</p>
+                    <select class="form-select">
+                        <option>数量: 0</option>
+                        <option>数量: 1</option>
+                        <option>数量: 2</option>
+                        <option>数量: 4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="border p-3">
+                    <img src="templates/product4.jpg" alt="商品4" class="img-fluid">
+                    <p class="mt-2 text-start">小松菜</p>
+                    <p class="text-start">￥XXX</p>
+                    <p class="text-start">在庫状況</p>
+                    <select class="form-select">
+                        <option>数量: 0</option>
+                        <option>数量: 1</option>
+                        <option>数量: 2</option>
+                        <option>数量: 4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="border p-3">
+                    <img src="templates/product5.jpg" alt="商品5" class="img-fluid">
+                    <p class="mt-2 text-start">メロン</p>
+                    <p class="text-start">￥XXX</p>
+                    <p class="text-start">在庫状況</p>
+                    <select class="form-select">
+                        <option>数量: 0</option>
+                        <option>数量: 1</option>
+                        <option>数量: 2</option>
+                        <option>数量: 4</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 注文ボタン -->
+    <div class="text-center py-4" style="margin-bottom: 100px;">
+        <button class="btn btn-success px-5 py-2" onclick="location.href='order-confirmation.html'">
+            上記内容で注文する
+        </button>
+    </div>
+
+    <!-- フッター -->
+    <footer class="header-footer text-white text-center py-3">
+        <p class="mb-0">&copy;2025 小松農園</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
