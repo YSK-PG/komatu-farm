@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>注文履歴 - 小松農園</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header-footer text-white py-3">
+        <div class="container-custom d-flex justify-content-between align-items-center">
+            <h1 class="h4 mb-0">小松農園</h1>
+            <nav>
+                <a href="index.html" class="text-white me-3">TOP</a>
+                <a href="order-history.html" class="text-white me-3">注文履歴</a>
+                <a href="admin-settings.html" class="text-white">管理者</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 注文履歴ページ -->
+    <section class="container-custom py-4">
+        <h3>注文履歴</h3>
+        <p>配達日：X月X日（曜日）</p>
+        
+        <h4>&lt;注文商品一覧&gt;</h4>
+        
+        <!-- 注文商品情報テーブル -->
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">商品</th>
+                    <th scope="col">在庫状況</th>
+                    <th scope="col">在庫数</th>
+                    <th scope="col">金額</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 商品1 -->
+                <tr>
+                    <td><img src="templates/product1.jpg" alt="商品画像" style="width: 50px;"> 商品名</td>
+                    <td>在庫あり</td>
+                    <td>個数</td>
+                    <td>¥ XXX</td>
+                </tr>
+                <!-- 商品2 -->
+                <tr>
+                    <td><img src="templates/product2.jpg" alt="商品画像" style="width: 50px;"> 商品名</td>
+                    <td>在庫あり</td>
+                    <td>個数</td>
+                    <td>¥ XXX</td>
+                </tr>
+                <!-- 商品3 -->
+                <tr>
+                    <td><img src="templates/product3.jpg" alt="商品画像" style="width: 50px;"> 商品名</td>
+                    <td>在庫あり</td>
+                    <td>個数</td>
+                    <td>¥ XXX</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <!-- 戻るボタン -->
+        <a href="index.html" class="btn btn-dark">TOPへ戻る</a>
+    </section>
+
+    <!-- フッター -->
+    <footer class="header-footer text-white text-center py-3">
+        <p class="mb-0">&copy;2025 小松農園</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

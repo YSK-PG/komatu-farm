@@ -14,7 +14,7 @@
             <h1 class="h4 mb-0">小松農園</h1>
             <nav>
                 <a href="index.html" class="text-white me-3">TOP</a>
-                <a href="#" class="text-white me-3">注文履歴</a>
+                <a href="order-history.html" class="text-white me-3">注文履歴</a>
                 <a href="admin-settings.html" class="text-white">管理者</a>
             </nav>
         </div>
@@ -27,32 +27,34 @@
         <!-- お知らせ設定 -->
         <h4>農園からのお知らせ</h4>
         <textarea class="form-control mb-3" rows="3" placeholder="お知らせに掲載する文字"></textarea>
-        
-        <!-- 商品登録・管理 -->
-        <h4>商品登録</h4>
-        <button class="btn btn-primary mb-3">注文状況</button>
-        
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3">
-            <div class="col" v-for="item in items">
-                <div class="border p-3 text-center">
-                    <div class="bg-secondary text-white py-3">商品画像</div>
-                    <p class="mt-2">商品名</p>
-                    <p>￥XXX</p>
-                    <select class="form-select mb-2">
-                        <option>在庫状況</option>
-                        <option>在庫あり</option>
-                        <option>在庫なし</option>
-                    </select>
-                    <select class="form-select mb-2">
-                        <option>数量</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                    </select>
-                    <button class="btn btn-secondary">更新</button>
-                </div>
-            </div>
-        </div>
+
+        <!-- 商品情報テーブル -->
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">商品</th>
+              <th scope="col">在庫状況</th>
+              <th scope="col">在庫数</th>
+              <th scope="col">価格</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 商品1 -->
+            <tr>
+              <td><img src="templates/product1.jpg" alt="商品画像" style="width: 50px;"> 里芋</td>
+              <td><span class="badge bg-success">在庫あり</span></td>
+              <td>3</td>
+              <td>2</td>
+            </tr>
+            <!-- 商品2 -->
+            <tr>
+              <td><img src="templates/product2.jpg" alt="商品画像" style="width: 50px;"> みかん</td>
+              <td><span class="badge bg-info">在庫なし</span></td>
+              <td>3</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
 
         <!-- 管理者情報設定 -->
         <h4 class="mt-4">管理者の設定</h4>
